@@ -10,7 +10,7 @@ __Lang:__ ```c++```
   ---
 ## Screenshot
 
-![Screen](/img/prg.png)
+![Screen](/img/screenShot.png)
 ---
 
 ### Install
