@@ -3,5 +3,5 @@
   Bin-VV - this program convert decimal to binary
 </head>
 <body>
-  <br>![SOME](/img/prg.png)
+  ![GitHub Logo](/img/prg.png)
  </body>
