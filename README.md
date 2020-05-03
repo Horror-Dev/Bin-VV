@@ -30,6 +30,10 @@ __Version: [A_0.1]__
  Google Drive: [Here](https://drive.google.com/file/d/1TYlNtbjumy1Y1m0HNZt58FN3pRiNuAni/view?usp=sharing)
  
  ---
+
+# Future updates:
+   [A_0.2](update/A_0.2)
+   ---
  
 # Created by:
 ```shadowGamming```
