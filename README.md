@@ -32,7 +32,7 @@ __Version: [A_0.1]__
  ---
 
 # Future updates:
-   [A_0.2](update/A_0.2)
+   [A_0.2](Updates/A_0.2.md)
    ---
  
 # Created by:
