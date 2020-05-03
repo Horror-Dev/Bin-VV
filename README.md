@@ -1,2 +1,4 @@
 # Bin-VV
-to binary
+<head>
+  <title>this program convert decimal to binary </title>
+</head>
