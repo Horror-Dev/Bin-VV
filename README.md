@@ -27,7 +27,7 @@ __Lang:__ ```c++```
 
 ---
 
- reporsitory: [Here](https://github.com/shadowGamming/Bin-VV/blob/master/program/BINV.exe)
+ reporsitory: [Here](https://github.com/shadowGamming/Bin-VV/blob/master/program/Bin-VV.exe)
 
  Google Drive: [Here](https://drive.google.com/file/d/1TYlNtbjumy1Y1m0HNZt58FN3pRiNuAni/view?usp=sharing)
  
