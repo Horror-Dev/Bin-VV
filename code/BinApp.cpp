@@ -15,7 +15,7 @@ BinApp::BinApp(){
 	catch (const std::exception& ex){
 		string ErrInfo = ex.what();
 
-		MessageBox(nullptr,wstring(begin(ErrInfo), end(ErrInfo)).c_str(),L"Œ¯Ë·Í‡", MB_ICONERROR | MB_OK);
+		MessageBox(nullptr,wstring(begin(ErrInfo), end(ErrInfo)).c_str(),L"√é√∏√®√°√™√†", MB_ICONERROR | MB_OK);
 		ExitProcess(EXIT_FAILURE);
 	}
 }
@@ -108,7 +108,7 @@ void BinApp::LoadSettingFromFile() {
 	if (!fl1.is_open()) {
 		fl1.close();
 		fl.open(FileName);
-		fl << "Theme = Midnight City";
+		fl << "Theme = Black";
 		fl.close();
 	}
 
