@@ -8,7 +8,7 @@ void BinApp::onCreate() {
 	catch (const std::exception& ex) {
 		std::string ErrInfo = ex.what();
 
-		MessageBox(nullptr, std::wstring(begin(ErrInfo), end(ErrInfo)).c_str(), L"Œ¯Ë·Í‡", MB_ICONERROR | MB_OK);
+		MessageBox(nullptr, std::wstring(begin(ErrInfo), end(ErrInfo)).c_str(), L"√é√∏√®√°√™√†", MB_ICONERROR | MB_OK);
 		ExitProcess(EXIT_FAILURE);
 	}
 }
