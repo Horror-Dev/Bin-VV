@@ -6,7 +6,7 @@
   ---
   __2. input this text ```Theme = [Name of theme]```  in ```St.txt```__
   ---
-## Themes
+## Themes:
     
  Black
  ---
