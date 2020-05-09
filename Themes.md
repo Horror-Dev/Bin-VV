@@ -10,4 +10,9 @@
     
  Black
  ---
-[THMBLK](img/ThemeBlack.PNG)
+![THMBLK](img/ThemeBlack.png)
+
+ Skyes 
+ ---
+
+![THMSKYES](img/ThemeSkyes.png)
