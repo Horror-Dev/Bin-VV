@@ -1,6 +1,6 @@
 #include"BinApp.h"
 
-// Window Processes 
+// Window Process
 LRESULT CALLBACK BinApp::WindProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 	switch (uMsg) {
 	case WM_CREATE:
