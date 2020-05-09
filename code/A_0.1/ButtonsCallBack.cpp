@@ -15,7 +15,7 @@ void BinApp::onTransfButton() {
 		GetWindowText(this->EditHWND, &text[0], MAX_PATH);
 		text.erase(remove(begin(text), end(text), 0), end(text));
 		if (text.empty()) {
-			MessageBox(this->MainHwnd, L"Âåäèòå ÷èñëî", L"Èíôîðìàöèÿ", MB_ICONINFORMATION | MB_OK);
+			MessageBox(this->MainHwnd, L"Ã‚Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®", L"ÃˆÃ­Ã´Ã®Ã°Ã¬Ã Ã¶Ã¨Ã¿", MB_ICONINFORMATION | MB_OK);
 			return;
 		}
 
@@ -25,6 +25,6 @@ void BinApp::onTransfButton() {
 		SetWindowText(this->EditHWND, text.c_str());
 	}
 	catch (...) {
-		MessageBox(this->MainHwnd, L"÷èñëî ïðåâûøàåò 2 áàéòà", L"Âíèìàíèå", MB_ICONINFORMATION | MB_OK);
+		MessageBox(this->MainHwnd, L"Ã·Ã¨Ã±Ã«Ã® Ã¯Ã°Ã¥Ã¢Ã»Ã¸Ã Ã¥Ã² 2 Ã¡Ã Ã©Ã²Ã ", L"Ã‚Ã­Ã¨Ã¬Ã Ã­Ã¨Ã¥", MB_ICONINFORMATION | MB_OK);
 	}
 }
