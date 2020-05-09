@@ -33,6 +33,9 @@ __Lang:__ ```c++```
  
  ---
 
+# Updates:
+   [A_0.1](Updates/A_0.1.md)
+   
 # Future updates:
    [A_0.2](Updates/A_0.2.md)
    ---
