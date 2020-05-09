@@ -40,6 +40,8 @@ __Lang:__ ```c++```
 # Future updates:
    [A_0.2](Updates/A_0.2.md)
    ---
- 
+# Themes 
+   [Themes](Themes.md)
+   
 # Created by:
 ```shadowGamming```
