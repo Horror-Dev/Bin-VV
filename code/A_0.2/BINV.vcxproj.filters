@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BinVApp">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="BinVApp\App">
+      <UniqueIdentifier>{7feb5175-2e03-4888-a3fa-393fbd5e7add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BinVApp\App\WindProc">
+      <UniqueIdentifier>{be338232-0201-4abf-943d-74f70a2064d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BinVApp\App\Events">
+      <UniqueIdentifier>{5b122598-ffa2-4d96-957b-53f18f4d267e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BinVApp\App\Drawing">
+      <UniqueIdentifier>{aa6839a2-82f0-4a9b-aee4-9be46620f8a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Entry.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="BinApp.cpp">
+      <Filter>BinVApp\App</Filter>
+    </ClCompile>
+    <ClCompile Include="WindProc.cpp">
+      <Filter>BinVApp\App\WindProc</Filter>
+    </ClCompile>
+    <ClCompile Include="Events.cpp">
+      <Filter>BinVApp\App\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonsCallBack.cpp">
+      <Filter>BinVApp\App\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>BinVApp\App\Drawing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BinApp.h">
+      <Filter>BinVApp\App</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>BinVApp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BINV.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\94477_binary_384x512.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
