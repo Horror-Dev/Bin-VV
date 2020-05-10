@@ -10,9 +10,13 @@
     
  Black
  ---
-![THMBLK](img/ThemeBlack.png)
+![THMBLK](img/screenShot.png)
 
  Skyes 
  ---
 
-![THMSKYES](img/ThemeSkyes.png)
+![THMSKYES](img/Skyes.png)
+ 
+ Deep_Space
+ ---
+![DS](img/DS.png)
