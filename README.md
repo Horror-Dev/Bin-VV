@@ -8,7 +8,10 @@ __Version: ```[A_0.2]```__
 __Lang:__ ```c++```
 
   ---
-## Screenshot
+
+Screenshot
+
+---
 
 ![Screen](/img/screenShot.png)
 ---
