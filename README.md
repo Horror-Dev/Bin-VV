@@ -1,5 +1,5 @@
 # Bin-VV
-   __Simple program for convert decimal numbers to binary numbers.__ <br>
+   __Simple program for transferring numbers from one number system to another.__ <br>
 
    ---
 
