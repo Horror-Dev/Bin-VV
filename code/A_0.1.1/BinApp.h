@@ -27,7 +27,6 @@ processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 
 #include<bitset>
 
-#define SF "Settings.txt"
 
 class BinApp{
 	//--------------------------
