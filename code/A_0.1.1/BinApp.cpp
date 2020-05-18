@@ -15,7 +15,7 @@ BinApp::BinApp(){
 	catch (const std::exception& ex){
 		string ErrInfo = ex.what();
 
-		MessageBox(nullptr,wstring(begin(ErrInfo), end(ErrInfo)).c_str(),L"Ошибка", MB_ICONERROR | MB_OK);
+		MessageBox(nullptr,wstring(begin(ErrInfo), end(ErrInfo)).c_str(),L"Error", MB_ICONERROR | MB_OK);
 		ExitProcess(EXIT_FAILURE);
 	}
 }
@@ -46,7 +46,7 @@ void BinApp::initObjMainWindow() {
 	_wc.hCursor = LoadCursor(nullptr, IDC_ARROW);
 	_wc.hIcon = LoadIcon(nullptr, IDI_APPLICATION);
 	_wc.hIconSm = LoadIcon(nullptr, IDI_APPLICATION);
-	_wc.hbrBackground = /*reinterpret_cast<HBRUSH>(GetStockObject(WHITE_BRUSH))*/nullptr;
+	_wc.hbrBackground = nullptr;
 	_wc.cbClsExtra = 0;
 	_wc.cbWndExtra = 0;
 	_wc.style = CS_VREDRAW | CS_HREDRAW;
