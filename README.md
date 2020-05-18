@@ -30,7 +30,7 @@ Screenshot
 
 ---
 
- reporsitory: [Here](https://github.com/shadowGamming/Bin-VV/blob/master/program/)
+ reporsitory: [Here](https://github.com/Horror-Dev/Bin-VV/releases)
  
  ---
 
