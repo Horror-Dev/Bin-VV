@@ -50,17 +50,6 @@ class BinApp{
 	RECT m_rWindowRect{};
 
 	//-------Functions------------
-	
-	float dipX{}, dipY{};
-
-
-	float pixelToDipX(float x) {
-		return (x * 96.f) / dipX;
-	}
-
-	float pixelToDipY(float y) {
-		return (y * 96.f) / dipY;
-	}
 
 	void CreateResources();
 
