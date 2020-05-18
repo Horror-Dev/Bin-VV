@@ -38,14 +38,14 @@ void BinApp::onTransfButton(LPARAM lParam) {
 		GetWindowText(this->EditHWND, &text[0], MAX_PATH);
 		text.erase(remove(begin(text), end(text), 0), end(text));
 		if (text.empty()) {
-			MessageBox(this->MainHwnd, L"Âåäèòå ÷èñëî", L"Èíôîðìàöèÿ", MB_ICONINFORMATION | MB_OK);
+			MessageBox(this->MainHwnd, L"Please enter number!", L"information", MB_ICONINFORMATION | MB_OK);
 			return;
 		}
 		text = Convert(text, NumSystem, Num2System);
 		SetWindowText(this->EditHWND, text.c_str());
 	}
 	catch (...) {
-		MessageBox(this->MainHwnd, L"÷èñëî ïðåâûøàåò 2 áàéòà", L"Âíèìàíèå", MB_ICONINFORMATION | MB_OK);
+		MessageBox(this->MainHwnd, L"the number exceeds 2 bytes", L"warning", MB_ICONINFORMATION | MB_OK);
 	}
 }
 

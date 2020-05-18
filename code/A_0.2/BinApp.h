@@ -28,16 +28,15 @@ processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 
 #include"resource.h"
 
-#define SF "Settings.txt"
 
 class Converter {
 private:
-	//Вектор содержит исходное число
+	
 	std::vector<int> a;
-	//Исходная система счисления
+	
 	int iriginal;
 public:
-	//Конструктор, содержит 2 параметра: строка исходного числа, исходная система счисления
+	
 	Converter(std::string str, int original) {
 		this->iriginal = original;
 		//Заносит числа исходного числа в вектор
@@ -45,7 +44,7 @@ public:
 			this->a.push_back(charToInt(str[i]));
 		}
 	}
-	//Переводит символ в число, вместо некорректных символов возвращает -1
+
 	int charToInt(char c) {
 		if (c >= '0' && c <= '9' && (c - '0') < this->iriginal) {
 			return c - '0';
@@ -59,7 +58,7 @@ public:
 			}
 		}
 	}
-	//Переводит число в символ
+
 	char intToChar(int c) {
 		if (c >= 0 && c <= 9) {
 			return c + '0';
@@ -68,7 +67,7 @@ public:
 			return c + 'A' - 10;
 		}
 	}
-	//Получает следующую цифру числа в новой системе счисления
+
 	int nextNumber(int final) {
 		int temp = 0;
 		for (int i = 0; i < this->a.size(); i++) {
@@ -78,7 +77,7 @@ public:
 		}
 		return temp;
 	}
-	//Возвращает true - если массив состоит из одних нулей и false в противном случае
+
 	bool zero() {
 		for (int i = 0; i < this->a.size(); i++) {
 			if (a[i] != 0) {
@@ -87,7 +86,7 @@ public:
 		}
 		return true;
 	}
-	//Конвертирует исходное число в заданную систему счисления
+
 	std::string convertTo(int final) {
 		std::vector<int> b;
 		int size = 0;

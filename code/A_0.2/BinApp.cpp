@@ -15,7 +15,7 @@ BinApp::BinApp(){
 	catch (const std::exception& ex){
 		string ErrInfo = ex.what();
 
-		MessageBox(nullptr,wstring(begin(ErrInfo), end(ErrInfo)).c_str(),L"Ошибка", MB_ICONERROR | MB_OK);
+		MessageBox(nullptr,wstring(begin(ErrInfo), end(ErrInfo)).c_str(),L"Error", MB_ICONERROR | MB_OK);
 		ExitProcess(EXIT_FAILURE);
 	}
 }
@@ -46,7 +46,7 @@ void BinApp::initObjMainWindow() {
 	_wc.hCursor = LoadCursor(nullptr, IDC_ARROW);
 	_wc.hIcon = LoadIcon(nullptr, IDI_APPLICATION);
 	_wc.hIconSm = LoadIcon(nullptr, IDI_APPLICATION);
-	_wc.hbrBackground = /*reinterpret_cast<HBRUSH>(GetStockObject(WHITE_BRUSH))*/nullptr;
+	_wc.hbrBackground = nullptr;
 	_wc.cbClsExtra = 0;
 	_wc.cbWndExtra = 0;
 	_wc.style = CS_VREDRAW | CS_HREDRAW;
@@ -63,9 +63,6 @@ void BinApp::initObjMainWindow() {
 
 void BinApp::CreateNativeControls() {
 
-
-	// Send the CB_SETCURSEL message to display an initial item 
-	//  in the selection field  
 	SendMessage(hWndComboBox, CB_SETCURSEL, (WPARAM)2, (LPARAM)0);
 
 	if (this->CloseButtonHwnd = CreateWindowEx(0, L"BUTTON", L"X", BS_PUSHBUTTON | BS_OWNERDRAW | WS_VISIBLE | WS_CHILD , 340, 10, 10, 10, this->MainHwnd, reinterpret_cast<HMENU>(BinApp::CTL_ID::ID_BUTTON_CLOSE), nullptr, nullptr); !this->CloseButtonHwnd)
@@ -108,7 +105,6 @@ void BinApp::CreateNativeControls() {
 	{
 		wcscpy_s(A, sizeof(A) / sizeof(TCHAR), (TCHAR*)LIST[k]);
 
-		// Add string to combobox.
 		SendMessage(hWndComboBox, (UINT)CB_ADDSTRING, (WPARAM)0, (LPARAM)A);
 	}
 
@@ -117,12 +113,9 @@ void BinApp::CreateNativeControls() {
 	{
 		wcscpy_s(A, sizeof(A) / sizeof(TCHAR), (TCHAR*)LIST[k]);
 
-		// Add string to combobox.
 		SendMessage(hWndComboBox2, (UINT)CB_ADDSTRING, (WPARAM)0, (LPARAM)A);
 	}
 
-	// Send the CB_SETCURSEL message to display an initial item 
-	//  in the selection field  
 	SendMessage(hWndComboBox, CB_SETCURSEL, (WPARAM)2, (LPARAM)0);
 	SendMessage(hWndComboBox2, CB_SETCURSEL, (WPARAM)2, (LPARAM)0);
 

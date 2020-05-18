@@ -9,7 +9,7 @@ void BinApp::onCreate() {
 	catch (const std::exception& ex) {
 		std::string ErrInfo = ex.what();
 
-		MessageBox(nullptr, std::wstring(begin(ErrInfo), end(ErrInfo)).c_str(), L"Ошибка", MB_ICONERROR | MB_OK);
+		MessageBox(nullptr, std::wstring(begin(ErrInfo), end(ErrInfo)).c_str(), L"Error", MB_ICONERROR | MB_OK);
 		ExitProcess(EXIT_FAILURE);
 	}
 
@@ -38,9 +38,6 @@ void BinApp::Command(const int& nId, WPARAM wParam, LPARAM lParam) {
 		case static_cast<int>(BinApp::CTL_ID::ID_BUTTON_MINIMIZE) :
 			this->onMinimizeButton();
 		break;
-		case static_cast<int>(BinApp::CTL_ID::ID_COMBOBOX) :
-			
-			break;
 	}
 }
 
