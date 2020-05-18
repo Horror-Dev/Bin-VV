@@ -95,10 +95,6 @@ class BinApp{
 
 	HDC m_hWindowDC{};
 
-	const HRGN m_hSrcRgn{ CreateRectRgn(0,0,350,180) };
-	const HRGN m_hSrcRgn1{ CreateRectRgn(2,2,348,375) };
-	HRGN m_hAnimRegion{};
-
 	const int Width{ 350 }, Hieght{ 280 };
 
 	const std::wstring AppName{ L"Bin-VV" };
