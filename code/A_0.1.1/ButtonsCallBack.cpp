@@ -15,7 +15,7 @@ void BinApp::onTransfButton() {
 		GetWindowText(this->EditHWND, &text[0], MAX_PATH);
 		text.erase(remove(begin(text), end(text), 0), end(text));
 		if (text.empty()) {
-			MessageBox(this->MainHwnd, L"Ведите число", L"Информация", MB_ICONINFORMATION | MB_OK);
+			MessageBox(this->MainHwnd, L"Please enter number!", L"information", MB_ICONINFORMATION | MB_OK);
 			return;
 		}
 
@@ -25,6 +25,6 @@ void BinApp::onTransfButton() {
 		SetWindowText(this->EditHWND, text.c_str());
 	}
 	catch (...) {
-		MessageBox(this->MainHwnd, L"число превышает 2 байта", L"Внимание", MB_ICONINFORMATION | MB_OK);
+		MessageBox(this->MainHwnd, L"the number exceeds 2 bytes", L"warning", MB_ICONINFORMATION | MB_OK);
 	}
 }
