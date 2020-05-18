@@ -30,7 +30,6 @@ LRESULT CALLBACK BinApp::WindProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lP
 		this->Paint(hwnd);
 		break;
 	case WM_DRAWITEM:
-	//	MessageBox(NULL, L"rt", L"cap", ERROR);
 		this->ButtonDrawing(wParam,reinterpret_cast<PDRAWITEMSTRUCT>(lParam));
 		return 0;
 	case WM_SETCURSOR:

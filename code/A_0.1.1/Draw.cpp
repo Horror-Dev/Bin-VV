@@ -191,7 +191,7 @@ void BinApp::DrawMinimizeButton(PDRAWITEMSTRUCT pDis) {
 }
 
 void BinApp::DrawConvertButton(PDRAWITEMSTRUCT pDis) {
-	m_pDWriteFactory->CreateTextFormat(L"Consolas", nullptr, DWRITE_FONT_WEIGHT::DWRITE_FONT_WEIGHT_REGULAR, DWRITE_FONT_STYLE::DWRITE_FONT_STYLE_NORMAL, DWRITE_FONT_STRETCH::DWRITE_FONT_STRETCH_NORMAL, pixelToDipY(20.f), L"", &this->TextButtonFormt);
+	m_pDWriteFactory->CreateTextFormat(L"Consolas", nullptr, DWRITE_FONT_WEIGHT::DWRITE_FONT_WEIGHT_REGULAR, DWRITE_FONT_STYLE::DWRITE_FONT_STYLE_NORMAL, DWRITE_FONT_STRETCH::DWRITE_FONT_STRETCH_NORMAL, 20.f, L"", &this->TextButtonFormt);
 	m_pDCRT->Clear(D2D1::ColorF(D2D1::ColorF::Lime));
 	if (pDis->itemState & ODS_SELECTED) {
 		this->pSBrush->SetColor(D2D1::ColorF(0.043137f, 0.400000f, 0.137255f));
@@ -204,17 +204,6 @@ void BinApp::DrawConvertButton(PDRAWITEMSTRUCT pDis) {
 		this->pSBrush->SetColor(D2D1::ColorF(D2D1::ColorF::Black));
      	this->m_pDCRT->DrawRectangle(D2D1::RectF(5.f, 5.f, 145.f, 34.f), this->pSBrush);
 	}
-	//this->m_pDWriteFactory->CreateTextFormat(
-	//	L"Consolas",
-	//	nullptr,
-	//	DWRITE_FONT_WEIGHT::DWRITE_FONT_WEIGHT_ULTRA_BLACK,
-	//	DWRITE_FONT_STYLE::DWRITE_FONT_STYLE_NORMAL,
-	//	DWRITE_FONT_STRETCH_NORMAL,
-	//	15.0f,
-	//	L"",
-	//	&this->m_pTextFormat
-	//);
-
 
 	m_pDWriteFactory->CreateTextFormat(L"Consolas", nullptr, DWRITE_FONT_WEIGHT::DWRITE_FONT_WEIGHT_REGULAR, DWRITE_FONT_STYLE::DWRITE_FONT_STYLE_NORMAL, DWRITE_FONT_STRETCH::DWRITE_FONT_STRETCH_NORMAL, 20.f, L"", &this->m_pTextFormat);
 	

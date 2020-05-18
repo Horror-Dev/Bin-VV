@@ -105,12 +105,6 @@ void BinApp::LoadSettingFromFile() {
 	std::ofstream fl;
 	std::ifstream fl1;
 	fl1.open(FileName);
-	if (!fl1.is_open()) {
-		fl1.close();
-		fl.open(FileName);
-		fl << "Theme = Black";
-		fl.close();
-	}
 
 	std::string config_str;
 	std::ifstream inf;
